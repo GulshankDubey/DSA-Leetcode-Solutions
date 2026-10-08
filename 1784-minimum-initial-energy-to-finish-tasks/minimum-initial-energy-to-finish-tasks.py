@@ -4,7 +4,9 @@ class Solution:
         n = len(tasks)
 
         l = 0
-        r = 10**9
+        r = 0
+        for task in tasks:    # here we take differet 'r'
+            r += task[1]
 
         result = float('inf')
 
